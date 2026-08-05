@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Responsive Website</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+            padding:20px;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:10px;
+        }
+
+        p{
+            margin-bottom:20px;
+        }
+
+        h2{
+            margin-top:20px;
+            margin-bottom:10px;
+        }
+
+        ul{
+            margin-left:20px;
+            margin-bottom:20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-bottom:20px;
+        }
+
+        table, th, td{
+            border:1px solid black;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+
+        input,
+        textarea{
+            padding:10px;
+            margin:10px 0;
+        }
+
+        button{
+            padding:12px;
+            border:none;
+            background:blue;
+            color:white;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:darkblue;
+        }
+
+        /* Responsive Design */
+
+        @media (max-width:768px){
+
+            body{
+                padding:10px;
+            }
+
+            .container{
+                padding:15px;
+            }
+
+            table{
+                font-size:14px;
+            }
+
+            input,
+            textarea,
+            button{
+                font-size:16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Welcome to My Website</h1>
+
+        <p>
+            Hello! My name is Ayushi. I am learning HTML and CSS.
+        </p>
+
+        <h2>My Hobbies</h2>
+
+        <ul>
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Listening to Music</li>
+        </ul>
+
+        <h2>Student Details</h2>
+
+        <table>
+
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+            </tr>
+
+            <tr>
+                <td>Ayushi</td>
+                <td>20</td>
+                <td>B.Tech</td>
+            </tr>
+
+            <tr>
+                <td>Rahul</td>
+                <td>21</td>
+                <td>BCA</td>
+            </tr>
+
+        </table>
+
+        <h2>Contact Form</h2>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="email">
+
+            <label>Message</label>
+            <textarea rows="5"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
