@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Responsive Website</title>
+    <body id="body-id">
+        <h1 class="h1-tag">Practising DOM</h1>
+        <!-- <p class="p-tag">
+            This is my first responsive website. I am learning how to manipulate the DOM using JavaScript.
+        </p>
+        <h2 class="h2-tag"> subheading</h2> -->
+
+    <div>
+        <button id="btn">Dark Mode</button>
+    </div>
+
+    <script>
+        const button = document.querySelector('#btn');
+        const h = document.querySelector(".h1-tag");
+        const body = document.querySelector("#body-id");
+
+        let isDarkMode = false;
+        // h.style.color = "blue";
+        // button.innerText = "Content changed";
+
+        // function btnClick() {
+        //     console.log("Button clicked");
+        // }
+
+        // button.addEventListener('click', btnClick);
+
+        // button.addEventListener('click', () => {
+        //     h.innerText = "Button clicked";
+        // });
+        button.addEventListener('click', () => {
+            if (!isDarkMode){
+                body.style.backgroundColor = 'black';
+                h.style.color = 'white';
+                button.innerText = "Light Mode";
+                isDarkMode = true;
+            } else {
+                body.style.backgroundColor = 'white';
+                h.style.color = 'black';
+                button.innerText = "Dark Mode";
+                isDarkMode = false;
+            }
+        });
+        // button.addEventListener('click', () => {
+        //     button.style.backgroundColor = 'black';
+        // });
+
+        // const p = document.querySelector(".p-tag");
+        // p.style.backgroundColor = "yellow";
+
+        
+
+    </script>
+    
+
+</body>
+
+</html>
