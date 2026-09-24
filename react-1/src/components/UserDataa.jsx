@@ -21,3 +21,7 @@ function UserDataa(){
     )
 }
 export default UserDataa;
+
+// useEffect ke andr jo fn dete vo ek hi baar chlta, agr usse dubara chlana h to use dependency array me variable 
+// pass krna pdta h, jiske change hone pr useEffect dobara chlta h. agr dependency array empty h to useEffect sirf 
+// ek hi baar chlta h.
